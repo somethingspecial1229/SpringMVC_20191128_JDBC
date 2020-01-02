@@ -49,7 +49,8 @@ public class CustomerDaoImpl implements CustomerDao {
 
     @Override
     public List<MicroMarket> queryMicroMarket() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String sql = "SELECT * FROM MICRO_MARKET";
+        return jdbcTemplate.query(sql, RM.MicroMarket);
     }
 
     @Override

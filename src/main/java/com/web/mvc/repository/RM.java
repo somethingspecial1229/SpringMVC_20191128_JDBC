@@ -15,9 +15,9 @@ public class RM {
     static RowMapper<MicroMarket> MicroMarket = (rs, i) -> {
         MicroMarket mm = new MicroMarket();
         mm.setZipCode(rs.getString("ZIP_CODE"));
-//        mm.setRadio(i);
-//        mm.setAreaLength(i);
-//        mm.setAreaWidth(i);
+        mm.setRadio(rs.getDouble("RADIUS"));
+        mm.setAreaLength(rs.getDouble("AREA_LENGTH"));
+        mm.setAreaWidth(rs.getDouble("AREA_WIDTH"));
         return mm;
     };
     
