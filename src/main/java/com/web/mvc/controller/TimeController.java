@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class TimeController {
-
     @RequestMapping("/time")
     @ResponseBody
     public String getTime() {
