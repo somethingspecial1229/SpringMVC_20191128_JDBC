@@ -1,6 +1,7 @@
 package com.web.mvc.entity;
 
 public class Product {
+
     private Integer productId;
     private Integer manufacturerId;
     private String productCode;
@@ -74,5 +75,8 @@ public class Product {
         this.description = description;
     }
 
-    
+    public String getLabel() {
+        return productId + " : " + description + " $" + purchaseCost + " 量：" + quantityOnHand;
+    }
+
 }
